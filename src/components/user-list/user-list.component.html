@@ -1,0 +1,9 @@
+<div class="user-list-container">
+  <h2>User List</h2>
+
+  <ul class="user-list">
+    <li *ngFor="let user of users">
+      {{ user.name }} {{ user.last_name }} - {{ user.address }} - {{ user.payment_method }}
+    </li>
+  </ul>
+</div>

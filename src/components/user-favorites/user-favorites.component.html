@@ -1,0 +1,17 @@
+<div class="favorites-container">
+    <h2>User Favorites</h2>
+  
+    <div class="form-group">
+      <label for="user-id">User ID:</label>
+      <input id="user-id" [(ngModel)]="user_id" type="number" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label for="product-id">Product ID:</label>
+      <input id="product-id" [(ngModel)]="product_id" type="number" class="form-control">
+    </div>
+  
+    <button mat-raised-button color="primary" (click)="addFavorite()">Add Favorite</button>
+    <button mat-raised-button color="warn" (click)="deleteFavorite()">Delete Favorite</button>
+  </div>
+  

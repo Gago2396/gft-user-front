@@ -1,0 +1,16 @@
+<div class="search-container">
+    <h2>User Search</h2>
+  
+    <mat-form-field class="search-input">
+      <input matInput placeholder="Enter name" [(ngModel)]="searchTerm">
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" (click)="searchUsers()">Search</button>
+  
+    <ul class="search-results">
+      <li *ngFor="let user of searchResults">
+        {{ user.name }} {{ user.last_name }} - {{ user.address }} - {{ user.payment_method }}
+      </li>
+    </ul>
+  </div>
+  

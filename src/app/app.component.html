@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container"> 
+    <a class="navbar-brand" routerLink="/users">User App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/users">User List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/search">User Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/favorites">User Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/upload">User Upload</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4"> 
+  <router-outlet></router-outlet>
+</div>
